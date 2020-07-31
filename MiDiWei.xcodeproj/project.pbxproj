@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53FBE0F224D4910300F9FFBF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBE0F124D4910300F9FFBF /* HomeViewController.swift */; };
 		BE810C3824D1EB5200BD830B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3624D1EB5200BD830B /* Home.storyboard */; };
 		BE810C3A24D1ECDA00BD830B /* Pesquisa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */; };
 		BE810C3D24D1ECEC00BD830B /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53FBE0F124D4910300F9FFBF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BE810C3724D1EB5200BD830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiDiWei/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pesquisa.storyboard; sourceTree = "<group>"; };
 		BE810C3C24D1ECEC00BD830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiDiWei/Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				FEFE066F24CA0315000F1F37 /* LaunchScreen.storyboard */,
 				FEFE067224CA0315000F1F37 /* Info.plist */,
 				FEFE066A24CA0314000F1F37 /* MiDiWei.xcdatamodeld */,
+				53FBE0F124D4910300F9FFBF /* HomeViewController.swift */,
 			);
 			path = MiDiWei;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */,
 				FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */,
 				BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */,
+				53FBE0F224D4910300F9FFBF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
