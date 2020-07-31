@@ -6,9 +6,9 @@
 //  Copyright © 2020 Rafael Wei. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-struct Home {
+
+class HomeViewController : UIViewController {
     
-    let nome : String //nome do mentor
 }

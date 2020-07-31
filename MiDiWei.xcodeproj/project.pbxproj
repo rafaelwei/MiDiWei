@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53FBE0F224D4910300F9FFBF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBE0F124D4910300F9FFBF /* HomeViewController.swift */; };
+		53FBE0F724D49E6B00F9FFBF /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBE0F524D49E6B00F9FFBF /* MentorTableViewCell.swift */; };
+		53FBE0F824D49E6B00F9FFBF /* MentorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FBE0F624D49E6B00F9FFBF /* MentorTableViewCell.xib */; };
 		BE810C3824D1EB5200BD830B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3624D1EB5200BD830B /* Home.storyboard */; };
 		BE810C3A24D1ECDA00BD830B /* Pesquisa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */; };
 		BE810C3D24D1ECEC00BD830B /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */; };
@@ -23,7 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53FBE0F124D4910300F9FFBF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		53FBE0F524D49E6B00F9FFBF /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
+		53FBE0F624D49E6B00F9FFBF /* MentorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentorTableViewCell.xib; sourceTree = "<group>"; };
 		BE810C3724D1EB5200BD830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiDiWei/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pesquisa.storyboard; sourceTree = "<group>"; };
 		BE810C3C24D1ECEC00BD830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiDiWei/Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
@@ -83,7 +85,8 @@
 				FEFE066F24CA0315000F1F37 /* LaunchScreen.storyboard */,
 				FEFE067224CA0315000F1F37 /* Info.plist */,
 				FEFE066A24CA0314000F1F37 /* MiDiWei.xcdatamodeld */,
-				53FBE0F124D4910300F9FFBF /* HomeViewController.swift */,
+				53FBE0F524D49E6B00F9FFBF /* MentorTableViewCell.swift */,
+				53FBE0F624D49E6B00F9FFBF /* MentorTableViewCell.xib */,
 			);
 			path = MiDiWei;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FBE0F824D49E6B00F9FFBF /* MentorTableViewCell.xib in Resources */,
 				FEFE067924CA070F000F1F37 /* .gitignore in Resources */,
 				BE810C3A24D1ECDA00BD830B /* Pesquisa.storyboard in Resources */,
 				FEFE067124CA0315000F1F37 /* LaunchScreen.storyboard in Resources */,
@@ -163,12 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FBE0F724D49E6B00F9FFBF /* MentorTableViewCell.swift in Sources */,
 				FEFE066C24CA0314000F1F37 /* MiDiWei.xcdatamodeld in Sources */,
 				FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */,
 				FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */,
 				FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */,
 				BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */,
-				53FBE0F224D4910300F9FFBF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
