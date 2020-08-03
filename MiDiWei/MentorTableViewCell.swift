@@ -12,6 +12,7 @@ class MentorTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        print(#function)
         // Initialization code
     }
 
