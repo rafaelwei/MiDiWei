@@ -15,6 +15,11 @@
 		BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */; };
 		BE810C6B24D892AF00BD830B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE810C6924D892AF00BD830B /* TableViewCell.swift */; };
 		BE810C6C24D892AF00BD830B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE810C6A24D892AF00BD830B /* TableViewCell.xib */; };
+		FE8FEB3724D9DC54003AAEF7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB3624D9DC54003AAEF7 /* SearchViewController.swift */; };
+		FE8FEB3924D9DD5C003AAEF7 /* Curso.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB3824D9DD5C003AAEF7 /* Curso.swift */; };
+		FE8FEB3B24D9DEB3003AAEF7 /* cursos.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */; };
+		FE8FEB4024D9E68D003AAEF7 /* mentores.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FEB3F24D9E68D003AAEF7 /* mentores.json */; };
+		FE8FEB4224D9E6B0003AAEF7 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB4124D9E6B0003AAEF7 /* Mentor.swift */; };
 		FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066124CA0314000F1F37 /* AppDelegate.swift */; };
 		FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066324CA0314000F1F37 /* SceneDelegate.swift */; };
 		FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066524CA0314000F1F37 /* ViewController.swift */; };
@@ -34,6 +39,11 @@
 		BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		BE810C6924D892AF00BD830B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BE810C6A24D892AF00BD830B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		FE8FEB3624D9DC54003AAEF7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FE8FEB3824D9DD5C003AAEF7 /* Curso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso.swift; sourceTree = "<group>"; };
+		FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cursos.json; sourceTree = "<group>"; };
+		FE8FEB3F24D9E68D003AAEF7 /* mentores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mentores.json; sourceTree = "<group>"; };
+		FE8FEB4124D9E6B0003AAEF7 /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
 		FEFE065E24CA0314000F1F37 /* MiDiWei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiDiWei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFE066124CA0314000F1F37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFE066324CA0314000F1F37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +67,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE8FEB3C24D9E5A8003AAEF7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE066724CA0314000F1F37 /* Main.storyboard */,
+				BE810C3624D1EB5200BD830B /* Home.storyboard */,
+				BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */,
+				BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */,
+				BE810C6A24D892AF00BD830B /* TableViewCell.xib */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FE8FEB3D24D9E5DE003AAEF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE066524CA0314000F1F37 /* ViewController.swift */,
+				BE810C6924D892AF00BD830B /* TableViewCell.swift */,
+				BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */,
+				FE8FEB3624D9DC54003AAEF7 /* SearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FE8FEB3E24D9E5FB003AAEF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE8FEB3824D9DD5C003AAEF7 /* Curso.swift */,
+				FE8FEB4124D9E6B0003AAEF7 /* Mentor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FEFE065524CA0314000F1F37 = {
 			isa = PBXGroup;
 			children = (
@@ -77,22 +119,19 @@
 		FEFE066024CA0314000F1F37 /* MiDiWei */ = {
 			isa = PBXGroup;
 			children = (
+				FE8FEB3E24D9E5FB003AAEF7 /* Model */,
+				FE8FEB3C24D9E5A8003AAEF7 /* Storyboards */,
+				FE8FEB3D24D9E5DE003AAEF7 /* Controllers */,
+				FEFE066F24CA0315000F1F37 /* LaunchScreen.storyboard */,
 				FEFE066124CA0314000F1F37 /* AppDelegate.swift */,
 				FEFE066324CA0314000F1F37 /* SceneDelegate.swift */,
-				FEFE066524CA0314000F1F37 /* ViewController.swift */,
-				FEFE066724CA0314000F1F37 /* Main.storyboard */,
-				BE810C3624D1EB5200BD830B /* Home.storyboard */,
-				BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */,
-				BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */,
-				BE810C6924D892AF00BD830B /* TableViewCell.swift */,
-				BE810C6A24D892AF00BD830B /* TableViewCell.xib */,
-				BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */,
-				FEFE066D24CA0315000F1F37 /* Assets.xcassets */,
-				FEFE066F24CA0315000F1F37 /* LaunchScreen.storyboard */,
-				FEFE067224CA0315000F1F37 /* Info.plist */,
-				FEFE066A24CA0314000F1F37 /* MiDiWei.xcdatamodeld */,
 				53FBE0F524D49E6B00F9FFBF /* MentorTableViewCell.swift */,
 				53FBE0F624D49E6B00F9FFBF /* MentorTableViewCell.xib */,
+				FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */,
+				FE8FEB3F24D9E68D003AAEF7 /* mentores.json */,
+				FEFE066A24CA0314000F1F37 /* MiDiWei.xcdatamodeld */,
+				FEFE067224CA0315000F1F37 /* Info.plist */,
+				FEFE066D24CA0315000F1F37 /* Assets.xcassets */,
 			);
 			path = MiDiWei;
 			sourceTree = "<group>";
@@ -162,7 +201,9 @@
 				BE810C6C24D892AF00BD830B /* TableViewCell.xib in Resources */,
 				FEFE066E24CA0315000F1F37 /* Assets.xcassets in Resources */,
 				BE810C3D24D1ECEC00BD830B /* Perfil.storyboard in Resources */,
+				FE8FEB4024D9E68D003AAEF7 /* mentores.json in Resources */,
 				FEFE066924CA0314000F1F37 /* Main.storyboard in Resources */,
+				FE8FEB3B24D9DEB3003AAEF7 /* cursos.json in Resources */,
 				BE810C3824D1EB5200BD830B /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +217,11 @@
 			files = (
 				53FBE0F724D49E6B00F9FFBF /* MentorTableViewCell.swift in Sources */,
 				FEFE066C24CA0314000F1F37 /* MiDiWei.xcdatamodeld in Sources */,
+				FE8FEB3724D9DC54003AAEF7 /* SearchViewController.swift in Sources */,
 				FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */,
+				FE8FEB4224D9E6B0003AAEF7 /* Mentor.swift in Sources */,
 				FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */,
+				FE8FEB3924D9DD5C003AAEF7 /* Curso.swift in Sources */,
 				FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */,
 				BE810C6B24D892AF00BD830B /* TableViewCell.swift in Sources */,
 				BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */,
