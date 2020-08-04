@@ -16,11 +16,21 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        cursos = Curso.fethCursos()
 
         // Do any additional setup after loading the view.
     }
     
 
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      
+      if let indexPath = tableView.indexPathForSelectedRow {
+        tableView.deselectRow(at: indexPath, animated: true)
+      }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -35,35 +45,19 @@ class SearchViewController: UIViewController {
 
 // MARK: - TableView Funcs Extension
 extension SearchViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(cursos.count)
         return cursos.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell" , for: indexPath)
+        let curso: Curso
+        curso = cursos[indexPath.row]
+        print(curso)
+        cell.textLabel?.text = curso.name
+        
+        return cell
     }
-}
-
-extension SeaViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView,
-                 numberOfRowsInSection section: Int) -> Int {
-    if isFiltering {
-      return filteredCandies.count
-    }
-      
-    return candies.count
-  }
-  
-  func tableView(_ tableView: UITableView,
-                 cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    let candy: Candy
-    if isFiltering {
-      candy = filteredCandies[indexPath.row]
-    } else {
-      candy = candies[indexPath.row]
-    }
-    cell.textLabel?.text = candy.name
-    cell.detailTextLabel?.text = candy.category.rawValue
-    return cell
-  }
 }

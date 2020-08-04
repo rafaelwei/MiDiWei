@@ -13,17 +13,20 @@ struct Curso: Decodable{
 }
 
 extension Curso {
-    static func fethCurso() -> [Curso] {
+    static func fethCursos() -> [Curso] {
         guard
             let url = Bundle.main.url(forResource: "cursos", withExtension: "json"),
             let data = try? Data(contentsOf: url)
             else{
+                print("Errouuuuuu de novo")
                 return []
             }
         do{
             let decoder = JSONDecoder()
+            print("Certo")
             return try decoder.decode([Curso].self , from: data)
         }catch{
+            print("Errouuuuuu")
             return []
         }
     }

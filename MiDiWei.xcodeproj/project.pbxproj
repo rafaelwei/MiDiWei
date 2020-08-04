@@ -15,7 +15,7 @@
 		BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */; };
 		BE810C6B24D892AF00BD830B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE810C6924D892AF00BD830B /* TableViewCell.swift */; };
 		BE810C6C24D892AF00BD830B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE810C6A24D892AF00BD830B /* TableViewCell.xib */; };
-		FE8FEB3724D9DC54003AAEF7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB3624D9DC54003AAEF7 /* SearchViewController.swift */; };
+		FE8FEB3724D9DC54003AAEF7 /* PesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB3624D9DC54003AAEF7 /* PesquisaViewController.swift */; };
 		FE8FEB3924D9DD5C003AAEF7 /* Curso.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB3824D9DD5C003AAEF7 /* Curso.swift */; };
 		FE8FEB3B24D9DEB3003AAEF7 /* cursos.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */; };
 		FE8FEB4024D9E68D003AAEF7 /* mentores.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FEB3F24D9E68D003AAEF7 /* mentores.json */; };
@@ -39,7 +39,7 @@
 		BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		BE810C6924D892AF00BD830B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BE810C6A24D892AF00BD830B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		FE8FEB3624D9DC54003AAEF7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FE8FEB3624D9DC54003AAEF7 /* PesquisaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaViewController.swift; sourceTree = "<group>"; };
 		FE8FEB3824D9DD5C003AAEF7 /* Curso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso.swift; sourceTree = "<group>"; };
 		FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cursos.json; sourceTree = "<group>"; };
 		FE8FEB3F24D9E68D003AAEF7 /* mentores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mentores.json; sourceTree = "<group>"; };
@@ -72,9 +72,9 @@
 			children = (
 				FEFE066724CA0314000F1F37 /* Main.storyboard */,
 				BE810C3624D1EB5200BD830B /* Home.storyboard */,
-				BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */,
 				BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */,
 				BE810C6A24D892AF00BD830B /* TableViewCell.xib */,
+				BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 				FEFE066524CA0314000F1F37 /* ViewController.swift */,
 				BE810C6924D892AF00BD830B /* TableViewCell.swift */,
 				BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */,
-				FE8FEB3624D9DC54003AAEF7 /* SearchViewController.swift */,
+				FE8FEB3624D9DC54003AAEF7 /* PesquisaViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 			files = (
 				53FBE0F724D49E6B00F9FFBF /* MentorTableViewCell.swift in Sources */,
 				FEFE066C24CA0314000F1F37 /* MiDiWei.xcdatamodeld in Sources */,
-				FE8FEB3724D9DC54003AAEF7 /* SearchViewController.swift in Sources */,
+				FE8FEB3724D9DC54003AAEF7 /* PesquisaViewController.swift in Sources */,
 				FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */,
 				FE8FEB4224D9E6B0003AAEF7 /* Mentor.swift in Sources */,
 				FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */,

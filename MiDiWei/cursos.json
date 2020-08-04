@@ -1,5 +1,5 @@
 [
-    {"name": Engenharia},
-    {"name": Design},
-    {"name": Administracao}
+    {"name": "Engenharia"},
+    {"name": "Design"},
+    {"name": "Administracao"}
 ]

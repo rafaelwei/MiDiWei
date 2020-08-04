@@ -11,7 +11,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
-        super.awakeFromNib()
+//        super.awakeFromNib()
         print(#function)
         // Initialization code
     }
