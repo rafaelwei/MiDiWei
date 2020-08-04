@@ -13,6 +13,8 @@
 		BE810C3A24D1ECDA00BD830B /* Pesquisa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */; };
 		BE810C3D24D1ECEC00BD830B /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */; };
 		BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */; };
+		BE810C6B24D892AF00BD830B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE810C6924D892AF00BD830B /* TableViewCell.swift */; };
+		BE810C6C24D892AF00BD830B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE810C6A24D892AF00BD830B /* TableViewCell.xib */; };
 		FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066124CA0314000F1F37 /* AppDelegate.swift */; };
 		FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066324CA0314000F1F37 /* SceneDelegate.swift */; };
 		FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066524CA0314000F1F37 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pesquisa.storyboard; sourceTree = "<group>"; };
 		BE810C3C24D1ECEC00BD830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiDiWei/Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
 		BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		BE810C6924D892AF00BD830B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BE810C6A24D892AF00BD830B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FEFE065E24CA0314000F1F37 /* MiDiWei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiDiWei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFE066124CA0314000F1F37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFE066324CA0314000F1F37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				BE810C3624D1EB5200BD830B /* Home.storyboard */,
 				BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */,
 				BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */,
+				BE810C6924D892AF00BD830B /* TableViewCell.swift */,
+				BE810C6A24D892AF00BD830B /* TableViewCell.xib */,
 				BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */,
 				FEFE066D24CA0315000F1F37 /* Assets.xcassets */,
 				FEFE066F24CA0315000F1F37 /* LaunchScreen.storyboard */,
@@ -153,6 +159,7 @@
 				FEFE067924CA070F000F1F37 /* .gitignore in Resources */,
 				BE810C3A24D1ECDA00BD830B /* Pesquisa.storyboard in Resources */,
 				FEFE067124CA0315000F1F37 /* LaunchScreen.storyboard in Resources */,
+				BE810C6C24D892AF00BD830B /* TableViewCell.xib in Resources */,
 				FEFE066E24CA0315000F1F37 /* Assets.xcassets in Resources */,
 				BE810C3D24D1ECEC00BD830B /* Perfil.storyboard in Resources */,
 				FEFE066924CA0314000F1F37 /* Main.storyboard in Resources */,
@@ -172,6 +179,7 @@
 				FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */,
 				FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */,
 				FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */,
+				BE810C6B24D892AF00BD830B /* TableViewCell.swift in Sources */,
 				BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
