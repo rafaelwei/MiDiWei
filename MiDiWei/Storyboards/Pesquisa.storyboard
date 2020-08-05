@@ -16,8 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V7Z-Dp-Loc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="122" width="414" height="691"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="691" id="iCv-Xj-ffh"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Ibe-Ot-RjL">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -29,19 +32,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NY8-Ym-L6F">
+                                <rect key="frame" x="0.0" y="44" width="414" height="78"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="K04-6U-sBS" firstAttribute="trailing" secondItem="V7Z-Dp-Loc" secondAttribute="trailing" id="9U8-Ah-mr9"/>
                             <constraint firstItem="K04-6U-sBS" firstAttribute="bottom" secondItem="V7Z-Dp-Loc" secondAttribute="bottom" id="9a2-FU-sZp"/>
-                            <constraint firstItem="V7Z-Dp-Loc" firstAttribute="top" secondItem="K04-6U-sBS" secondAttribute="top" id="BGe-S4-2dr"/>
                             <constraint firstItem="V7Z-Dp-Loc" firstAttribute="leading" secondItem="K04-6U-sBS" secondAttribute="leading" id="Jnf-LP-Ddb"/>
+                            <constraint firstItem="V7Z-Dp-Loc" firstAttribute="top" secondItem="NY8-Ym-L6F" secondAttribute="bottom" id="L4o-Sd-OW4"/>
+                            <constraint firstItem="K04-6U-sBS" firstAttribute="trailing" secondItem="NY8-Ym-L6F" secondAttribute="trailing" id="Wsb-dG-my2"/>
+                            <constraint firstItem="NY8-Ym-L6F" firstAttribute="leading" secondItem="K04-6U-sBS" secondAttribute="leading" id="a7W-6j-d7S"/>
+                            <constraint firstItem="NY8-Ym-L6F" firstAttribute="top" secondItem="K04-6U-sBS" secondAttribute="top" id="aU9-WE-DiR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K04-6U-sBS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pesquisa" image="magnifyingglass" catalog="system" id="gCF-YH-B05"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="searchContainerView" destination="NY8-Ym-L6F" id="wHW-B6-A7I"/>
                         <outlet property="tableView" destination="V7Z-Dp-Loc" id="1JI-76-KcG"/>
                     </connections>
                 </viewController>
