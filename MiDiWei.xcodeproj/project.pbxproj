@@ -20,6 +20,7 @@
 		FE8FEB3B24D9DEB3003AAEF7 /* cursos.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */; };
 		FE8FEB4024D9E68D003AAEF7 /* mentores.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FEB3F24D9E68D003AAEF7 /* mentores.json */; };
 		FE8FEB4224D9E6B0003AAEF7 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB4124D9E6B0003AAEF7 /* Mentor.swift */; };
+		FEF024F724E4BAED00B73EEF /* CursoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF024F624E4BAED00B73EEF /* CursoTableViewCell.swift */; };
 		FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066124CA0314000F1F37 /* AppDelegate.swift */; };
 		FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066324CA0314000F1F37 /* SceneDelegate.swift */; };
 		FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE066524CA0314000F1F37 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cursos.json; sourceTree = "<group>"; };
 		FE8FEB3F24D9E68D003AAEF7 /* mentores.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mentores.json; sourceTree = "<group>"; };
 		FE8FEB4124D9E6B0003AAEF7 /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
+		FEF024F624E4BAED00B73EEF /* CursoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoTableViewCell.swift; sourceTree = "<group>"; };
 		FEFE065E24CA0314000F1F37 /* MiDiWei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiDiWei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFE066124CA0314000F1F37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFE066324CA0314000F1F37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,10 +84,8 @@
 		FE8FEB3D24D9E5DE003AAEF7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FEFE066524CA0314000F1F37 /* ViewController.swift */,
-				BE810C6924D892AF00BD830B /* TableViewCell.swift */,
-				BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */,
-				FE8FEB3624D9DC54003AAEF7 /* PesquisaViewController.swift */,
+				FEF024F924E4D84100B73EEF /* ScreenControllers */,
+				FEF024F824E4D80F00B73EEF /* TableViewCellControllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +97,26 @@
 				FE8FEB4124D9E6B0003AAEF7 /* Mentor.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FEF024F824E4D80F00B73EEF /* TableViewCellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE810C6924D892AF00BD830B /* TableViewCell.swift */,
+				53FBE0F524D49E6B00F9FFBF /* MentorTableViewCell.swift */,
+				FEF024F624E4BAED00B73EEF /* CursoTableViewCell.swift */,
+			);
+			path = TableViewCellControllers;
+			sourceTree = "<group>";
+		};
+		FEF024F924E4D84100B73EEF /* ScreenControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE066524CA0314000F1F37 /* ViewController.swift */,
+				BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */,
+				FE8FEB3624D9DC54003AAEF7 /* PesquisaViewController.swift */,
+			);
+			path = ScreenControllers;
 			sourceTree = "<group>";
 		};
 		FEFE065524CA0314000F1F37 = {
@@ -125,7 +145,6 @@
 				FEFE066F24CA0315000F1F37 /* LaunchScreen.storyboard */,
 				FEFE066124CA0314000F1F37 /* AppDelegate.swift */,
 				FEFE066324CA0314000F1F37 /* SceneDelegate.swift */,
-				53FBE0F524D49E6B00F9FFBF /* MentorTableViewCell.swift */,
 				53FBE0F624D49E6B00F9FFBF /* MentorTableViewCell.xib */,
 				FE8FEB3A24D9DEB3003AAEF7 /* cursos.json */,
 				FE8FEB3F24D9E68D003AAEF7 /* mentores.json */,
@@ -216,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53FBE0F724D49E6B00F9FFBF /* MentorTableViewCell.swift in Sources */,
+				FEF024F724E4BAED00B73EEF /* CursoTableViewCell.swift in Sources */,
 				FEFE066C24CA0314000F1F37 /* MiDiWei.xcdatamodeld in Sources */,
 				FE8FEB3724D9DC54003AAEF7 /* PesquisaViewController.swift in Sources */,
 				FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */,
