@@ -75,17 +75,21 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell" , for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CursoTableViewCell" , for: indexPath) as? CursoTableViewCell
+        
         let curso: Curso
         if isFiltering {
           curso = cursosDaBusca[indexPath.row]
         } else {
           curso = cursos[indexPath.row]
         }
-        print(curso)
-        cell.textLabel?.text = curso.name
         
-        return cell
+        //Colocando o nome do curso e a imagem
+        cell?.courseNameLabel.text = curso.name
+        cell?.layer.cornerRadius = 8
+        cell?.layer.masksToBounds = true
+        
+        return cell!
     }
 }
 

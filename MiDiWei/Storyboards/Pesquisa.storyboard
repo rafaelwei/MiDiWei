@@ -15,20 +15,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V7Z-Dp-Loc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V7Z-Dp-Loc">
                                 <rect key="frame" x="0.0" y="122" width="414" height="691"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="691" id="iCv-Xj-ffh"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Ibe-Ot-RjL">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CursoTableViewCell" rowHeight="150" id="Ibe-Ot-RjL" customClass="CursoTableViewCell" customModule="MiDiWei" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ibe-Ot-RjL" id="d2L-56-ShM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moU-KH-cvD">
+                                                    <rect key="frame" x="30" y="8" width="344" height="134"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4c-EZ-4WG">
+                                                            <rect key="frame" x="222" y="17" width="100" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Padrao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mN7-V0-V9E">
+                                                            <rect key="frame" x="8" y="17" width="157" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.65294480320000003" green="0.70620328190000003" blue="0.94121164079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="moU-KH-cvD" firstAttribute="centerY" secondItem="d2L-56-ShM" secondAttribute="centerY" id="LMR-g4-gDC"/>
+                                                <constraint firstAttribute="trailing" secondItem="moU-KH-cvD" secondAttribute="trailing" constant="40" id="PFf-Xs-xJd"/>
+                                                <constraint firstItem="moU-KH-cvD" firstAttribute="top" secondItem="d2L-56-ShM" secondAttribute="topMargin" constant="-3" id="oJi-lt-wfR"/>
+                                                <constraint firstAttribute="trailing" secondItem="moU-KH-cvD" secondAttribute="trailing" constant="40" id="uQT-RV-16v"/>
+                                                <constraint firstItem="moU-KH-cvD" firstAttribute="leading" secondItem="d2L-56-ShM" secondAttribute="leading" constant="30" id="yRd-XQ-vUQ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="courseCardView" destination="moU-KH-cvD" id="3rl-Nv-uHa"/>
+                                            <outlet property="courseNameLabel" destination="mN7-V0-V9E" id="NRL-mg-dGa"/>
+                                            <outlet property="myImageView" destination="k4c-EZ-4WG" id="jMM-cv-dWG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
