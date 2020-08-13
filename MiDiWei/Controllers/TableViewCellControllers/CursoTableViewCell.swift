@@ -22,6 +22,12 @@ class CursoTableViewCell: UITableViewCell {
         courseCardView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30).isActive = true
         courseCardView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 3).isActive = true
         courseCardView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -3).isActive = true
+        courseCardView.layer.cornerRadius = 8
+        courseCardView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        courseCardView.layer.shadowRadius = 8
+        courseCardView.layer.shadowOpacity = 0.5
+        courseCardView.layer.shadowOffset = CGSize(width: 10, height: 10)
+
         
         myImageView.image = UIImage(named: "Engenharia")
         // Initialization code
