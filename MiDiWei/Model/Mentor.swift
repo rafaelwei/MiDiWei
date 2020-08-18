@@ -8,6 +8,25 @@
 
 import Foundation
 
-struct Mentores{
-    
+struct Mentor: Decodable{
+    let name: String
+    let course: String
+    let description: String
+}
+
+extension Mentor {
+    static func fetchMentores() -> [Mentor] {
+        guard
+            let url = Bundle.main.url(forResource: "mentores", withExtension: "json"),
+            let data = try? Data(contentsOf: url)
+            else{
+                return []
+            }
+        do{
+            let decoder = JSONDecoder()
+            return try decoder.decode([Mentor].self , from: data)
+        }catch{
+            return []
+        }
+    }
 }

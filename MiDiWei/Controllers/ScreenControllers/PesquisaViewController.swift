@@ -28,7 +28,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        cursos = Curso.fethCursos()
+        cursos = Curso.fetchCursos()
 
         searchContainerView.addSubview(searchController.searchBar)
         // 1
@@ -86,8 +86,8 @@ extension SearchViewController: UITableViewDataSource {
         
         //Colocando o nome do curso e a imagem
         cell?.courseNameLabel.text = curso.name
-        cell?.layer.cornerRadius = 8
-        cell?.layer.masksToBounds = true
+        //cell?.layer.cornerRadius = 8
+        //cell?.layer.masksToBounds = true
         
         return cell!
     }

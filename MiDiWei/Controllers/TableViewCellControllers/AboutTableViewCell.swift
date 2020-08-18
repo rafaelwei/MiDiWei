@@ -1,18 +1,18 @@
 //
-//  TableViewCell.swift
+//  AboutTableViewCell.swift
 //  MiDiWei
 //
-//  Created by Pedro Guilherme Figueiredo Miranda on 03/08/20.
+//  Created by Rafael Wei on 14/08/20.
 //  Copyright © 2020 Rafael Wei. All rights reserved.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class AboutTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var aboutLabel: UILabel!
     override func awakeFromNib() {
-//        super.awakeFromNib()
-        print(#function)
+        super.awakeFromNib()
         // Initialization code
     }
 

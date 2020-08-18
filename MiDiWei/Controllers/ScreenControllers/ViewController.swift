@@ -8,42 +8,45 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "TelaMentor", for: indexPath) as? MentorTableViewCell
-        return cell!
-    }
-    
+class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-     
-
     
-    
+    var mentores: [Mentor] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.dataSource = self
+        
+        tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "MentorTableViewCell", bundle: nil), forCellReuseIdentifier: "TelaMentor")
-   //     self.tableView.register(MentorTableViewCell.self, forCellReuseIdentifier: "TelaMentor")
+        
         // Do any additional setup after loading the view.
+        mentores = Mentor.fetchMentores()
     }
-
 
 }
 
-class SecondViewController: UIViewController {
+// MARK: - TableView extension
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return mentores.count
     }
-
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TelaMentor", for: indexPath) as! MentorTableViewCell
+        
+        let mentor = mentores[indexPath.row]
+        
+        print(mentor.name)
+        print(mentor.course)
+        print(mentor.description)
+        cell.NameLabel.text = mentor.name
+        cell.CourseLabel.text = mentor.course
+        cell.DescriptionLabel.text = mentor.description
+        
+        return cell
+    }
 }
 
 

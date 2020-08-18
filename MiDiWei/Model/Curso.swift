@@ -13,7 +13,7 @@ struct Curso: Decodable{
 }
 
 extension Curso {
-    static func fethCursos() -> [Curso] {
+    static func fetchCursos() -> [Curso] {
         guard
             let url = Bundle.main.url(forResource: "cursos", withExtension: "json"),
             let data = try? Data(contentsOf: url)

@@ -10,9 +10,13 @@ import UIKit
 
 class MentorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var CourseLabel: UILabel!
+    @IBOutlet weak var DescriptionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        print(#function)
+        print("Mentor xib")
         // Initialization code
     }
 
