@@ -38,9 +38,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         let mentor = mentores[indexPath.row]
         
-        print(mentor.name)
-        print(mentor.course)
-        print(mentor.description)
         cell.NameLabel.text = mentor.name
         cell.CourseLabel.text = mentor.course
         cell.DescriptionLabel.text = mentor.description
