@@ -15,10 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mj-kI-fW9">
-                                <rect key="frame" x="20" y="44" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Olá, Pedro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mj-kI-fW9">
+                                <rect key="frame" x="20" y="44" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-0G-yv0">
@@ -48,7 +48,6 @@
                             <constraint firstItem="5ts-SB-Ljc" firstAttribute="bottom" secondItem="N8i-0G-yv0" secondAttribute="bottom" id="7Ju-IQ-jPN"/>
                             <constraint firstItem="N8i-0G-yv0" firstAttribute="top" secondItem="Te8-SH-7LH" secondAttribute="bottom" constant="20" id="Dyx-P7-iJp"/>
                             <constraint firstItem="5ts-SB-Ljc" firstAttribute="trailing" secondItem="N8i-0G-yv0" secondAttribute="trailing" id="QOp-YA-S1p"/>
-                            <constraint firstItem="5ts-SB-Ljc" firstAttribute="trailing" secondItem="8mj-kI-fW9" secondAttribute="trailing" constant="316" id="WHD-4Q-rMs"/>
                             <constraint firstItem="8mj-kI-fW9" firstAttribute="leading" secondItem="5ts-SB-Ljc" secondAttribute="leading" constant="20" id="b2Y-ak-ulA"/>
                             <constraint firstItem="Te8-SH-7LH" firstAttribute="leading" secondItem="5ts-SB-Ljc" secondAttribute="leading" constant="20" id="e8Q-m4-qmC"/>
                             <constraint firstItem="8mj-kI-fW9" firstAttribute="top" secondItem="5ts-SB-Ljc" secondAttribute="top" id="hgO-qo-SIF"/>

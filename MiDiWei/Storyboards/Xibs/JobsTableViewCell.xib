@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JobsTableViewCell" customModule="MiDiWei" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="131883" translatesAutoresizingMaskIntoConstraints="NO" id="YsR-pz-dTI">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7gE-Hh-wor"/>
+                            <constraint firstAttribute="height" constant="40" id="Uew-8D-WYF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gravity Falls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D87-LQ-FaJ">
+                        <rect key="frame" x="58" y="10" width="84" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meu trabalho final de animação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-x7-DuS">
+                        <rect key="frame" x="58" y="29" width="215" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fSp-AB-w9Y">
+                        <rect key="frame" x="66" y="65" width="208" height="74"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21ff79543d71d467eea2381f11949b9f" translatesAutoresizingMaskIntoConstraints="NO" id="z9i-2R-Hzp">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7nG-Nb-fS5"/>
+                                    <constraint firstAttribute="height" constant="74" id="p2G-Ji-881"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="342193-Bill_Cipher-Gravity_Falls" translatesAutoresizingMaskIntoConstraints="NO" id="j95-lE-duG">
+                                <rect key="frame" x="74" y="0.0" width="60" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="HeR-1b-Se4"/>
+                                    <constraint firstAttribute="height" constant="74" id="oZY-4q-C8c"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5-53874_gravity-falls-wallpaper-gravity-falls-wallpapers-hd-gravity.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fiW-6K-xVT">
+                                <rect key="frame" x="148" y="0.0" width="60" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Bhg-j5-fGS"/>
+                                    <constraint firstAttribute="width" constant="60" id="rDQ-19-E42"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="fSp-AB-w9Y" secondAttribute="trailing" constant="30" id="8vf-Zx-FKP"/>
+                    <constraint firstItem="YsR-pz-dTI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="F1Y-lN-zmA"/>
+                    <constraint firstItem="fSp-AB-w9Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="50" id="c2y-wC-jCt"/>
+                    <constraint firstItem="fSp-AB-w9Y" firstAttribute="top" secondItem="YsR-pz-dTI" secondAttribute="bottom" constant="15" id="ckI-Sw-YAD"/>
+                    <constraint firstItem="YsR-pz-dTI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="g8l-rz-nDk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fSp-AB-w9Y" secondAttribute="bottom" id="vLp-GF-Rjy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="131883" width="600" height="800"/>
+        <image name="21ff79543d71d467eea2381f11949b9f" width="1099" height="618"/>
+        <image name="342193-Bill_Cipher-Gravity_Falls" width="1920" height="1080"/>
+        <image name="5-53874_gravity-falls-wallpaper-gravity-falls-wallpapers-hd-gravity.jpg" width="1920" height="1080"/>
+    </resources>
+</document>

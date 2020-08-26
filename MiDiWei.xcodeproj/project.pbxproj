@@ -13,6 +13,12 @@
 		BE810C3A24D1ECDA00BD830B /* Pesquisa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */; };
 		BE810C3D24D1ECEC00BD830B /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE810C3B24D1ECEC00BD830B /* Perfil.storyboard */; };
 		BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */; };
+		FE06DAE324F699DA0003261B /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE06DAE124F699DA0003261B /* ExperienceTableViewCell.swift */; };
+		FE06DAE424F699DA0003261B /* ExperienceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE06DAE224F699DA0003261B /* ExperienceTableViewCell.xib */; };
+		FE06DAE724F6AB550003261B /* PlaceHolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE06DAE524F6AB550003261B /* PlaceHolderTableViewCell.swift */; };
+		FE06DAE824F6AB550003261B /* PlaceHolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE06DAE624F6AB550003261B /* PlaceHolderTableViewCell.xib */; };
+		FE06DAEB24F6BCF60003261B /* JobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE06DAE924F6BCF60003261B /* JobsTableViewCell.swift */; };
+		FE06DAEC24F6BCF60003261B /* JobsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE06DAEA24F6BCF60003261B /* JobsTableViewCell.xib */; };
 		FE8F696D24E712E4009683E3 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F696B24E712E4009683E3 /* AboutTableViewCell.swift */; };
 		FE8F696E24E712E4009683E3 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE8F696C24E712E4009683E3 /* AboutTableViewCell.xib */; };
 		FE8FEB3724D9DC54003AAEF7 /* PesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FEB3624D9DC54003AAEF7 /* PesquisaViewController.swift */; };
@@ -38,6 +44,12 @@
 		BE810C3924D1ECDA00BD830B /* Pesquisa.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pesquisa.storyboard; sourceTree = "<group>"; };
 		BE810C3C24D1ECEC00BD830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiDiWei/Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
 		BE810C3E24D1F61B00BD830B /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		FE06DAE124F699DA0003261B /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		FE06DAE224F699DA0003261B /* ExperienceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceTableViewCell.xib; sourceTree = "<group>"; };
+		FE06DAE524F6AB550003261B /* PlaceHolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTableViewCell.swift; sourceTree = "<group>"; };
+		FE06DAE624F6AB550003261B /* PlaceHolderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceHolderTableViewCell.xib; sourceTree = "<group>"; };
+		FE06DAE924F6BCF60003261B /* JobsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsTableViewCell.swift; sourceTree = "<group>"; };
+		FE06DAEA24F6BCF60003261B /* JobsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobsTableViewCell.xib; sourceTree = "<group>"; };
 		FE8F696B24E712E4009683E3 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 		FE8F696C24E712E4009683E3 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
 		FE8FEB3624D9DC54003AAEF7 /* PesquisaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesquisaViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +86,9 @@
 			children = (
 				53FBE0F624D49E6B00F9FFBF /* MentorTableViewCell.xib */,
 				FE8F696C24E712E4009683E3 /* AboutTableViewCell.xib */,
+				FE06DAE224F699DA0003261B /* ExperienceTableViewCell.xib */,
+				FE06DAE624F6AB550003261B /* PlaceHolderTableViewCell.xib */,
+				FE06DAEA24F6BCF60003261B /* JobsTableViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -114,6 +129,9 @@
 				53FBE0F524D49E6B00F9FFBF /* MentorTableViewCell.swift */,
 				FEF024F624E4BAED00B73EEF /* CursoTableViewCell.swift */,
 				FE8F696B24E712E4009683E3 /* AboutTableViewCell.swift */,
+				FE06DAE124F699DA0003261B /* ExperienceTableViewCell.swift */,
+				FE06DAE524F6AB550003261B /* PlaceHolderTableViewCell.swift */,
+				FE06DAE924F6BCF60003261B /* JobsTableViewCell.swift */,
 			);
 			path = TableViewCellControllers;
 			sourceTree = "<group>";
@@ -225,13 +243,16 @@
 				FEFE067924CA070F000F1F37 /* .gitignore in Resources */,
 				FE8F696E24E712E4009683E3 /* AboutTableViewCell.xib in Resources */,
 				BE810C3A24D1ECDA00BD830B /* Pesquisa.storyboard in Resources */,
+				FE06DAE824F6AB550003261B /* PlaceHolderTableViewCell.xib in Resources */,
 				FEFE067124CA0315000F1F37 /* LaunchScreen.storyboard in Resources */,
 				FEFE066E24CA0315000F1F37 /* Assets.xcassets in Resources */,
+				FE06DAEC24F6BCF60003261B /* JobsTableViewCell.xib in Resources */,
 				BE810C3D24D1ECEC00BD830B /* Perfil.storyboard in Resources */,
 				FE8FEB4024D9E68D003AAEF7 /* mentores.json in Resources */,
 				FEFE066924CA0314000F1F37 /* Main.storyboard in Resources */,
 				FE8FEB3B24D9DEB3003AAEF7 /* cursos.json in Resources */,
 				BE810C3824D1EB5200BD830B /* Home.storyboard in Resources */,
+				FE06DAE424F699DA0003261B /* ExperienceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,12 +268,15 @@
 				FEFE066C24CA0314000F1F37 /* MiDiWei.xcdatamodeld in Sources */,
 				FE8FEB3724D9DC54003AAEF7 /* PesquisaViewController.swift in Sources */,
 				FEFE066624CA0314000F1F37 /* ViewController.swift in Sources */,
+				FE06DAEB24F6BCF60003261B /* JobsTableViewCell.swift in Sources */,
 				FE8F696D24E712E4009683E3 /* AboutTableViewCell.swift in Sources */,
 				FE8FEB4224D9E6B0003AAEF7 /* Mentor.swift in Sources */,
 				FEFE066224CA0314000F1F37 /* AppDelegate.swift in Sources */,
 				FE8FEB3924D9DD5C003AAEF7 /* Curso.swift in Sources */,
+				FE06DAE724F6AB550003261B /* PlaceHolderTableViewCell.swift in Sources */,
 				FEFE066424CA0314000F1F37 /* SceneDelegate.swift in Sources */,
 				BE810C3F24D1F61B00BD830B /* PerfilViewController.swift in Sources */,
+				FE06DAE324F699DA0003261B /* ExperienceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

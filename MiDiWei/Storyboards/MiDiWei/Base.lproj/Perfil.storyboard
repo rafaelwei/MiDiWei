@@ -54,14 +54,8 @@
                                 <rect key="frame" x="24" y="108" width="107" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bml-JA-5i3">
-                                <rect key="frame" x="332" y="143" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Contato"/>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.65294480320000003" green="0.70620328190000003" blue="0.94121164079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="BVD-Lh-bbb" firstAttribute="top" secondItem="Mq8-uv-2rt" secondAttribute="top" constant="213" id="DSJ-Q8-eax"/>
                             <constraint firstItem="Mq8-uv-2rt" firstAttribute="trailing" secondItem="BVD-Lh-bbb" secondAttribute="trailing" id="ICE-na-x4A"/>
@@ -73,6 +67,8 @@
                     <tabBarItem key="tabBarItem" title="Perfil" image="person" catalog="system" id="Rex-ke-G1w"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="courseLabel" destination="2qf-wo-adl" id="p83-ZX-vTM"/>
+                        <outlet property="functionLabel" destination="GhG-m3-9Ar" id="KHM-rQ-6vf"/>
                         <outlet property="tableView" destination="BVD-Lh-bbb" id="Zxf-Wt-Wo2"/>
                     </connections>
                 </viewController>
