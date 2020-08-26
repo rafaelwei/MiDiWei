@@ -86,6 +86,13 @@ extension SearchViewController: UITableViewDataSource {
         
         //Colocando o nome do curso e a imagem
         cell?.courseNameLabel.text = curso.name
+        if(curso.name == "Design"){
+            cell?.myImageView.image = UIImage(named: "design")
+        }
+        if(curso.name == "Administracao"){
+            cell?.courseNameLabel.text = "Administração"
+            cell?.myImageView.image = UIImage(named: "adm")
+        }
         //cell?.layer.cornerRadius = 8
         //cell?.layer.masksToBounds = true
         
